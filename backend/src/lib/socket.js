@@ -7,7 +7,8 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: ["https://convo-zeta.vercel.app"],
+    origin: ["https://localhost:5173"],
+    credentials: true,
   },
 });
 
